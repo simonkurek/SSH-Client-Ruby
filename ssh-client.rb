@@ -18,7 +18,7 @@ loop do
     print "$ "
     command = gets.chomp()
     if command == "exit"
-        brake
+        break
     elsif
         result = ssh.exec!(command)
         puts result
